@@ -1151,3 +1151,35 @@ body {
   margin: 10px 0 30px;
   font-family: "BlenderProBook", sans-serif;
 }
+
+/* === BASE RESPONSIVE === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "BlenderProBook", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* === HEADER === */
+.header {
+  position: relative;
+  min-height: 660px;
+  background-color: #000;
+}
+
+.header__content {
+  max-width: 1134px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.header .title {
+  font-family: "BlenderProBold", sans-serif;
+  font-size: 48px;
+  letter-spacing: -0.06em;
+  color: #fff;
+  text-shadow: 0 0 10px
