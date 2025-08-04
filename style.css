@@ -1339,6 +1339,24 @@ body {
     flex-direction: column;
     gap: 12px;
   }
+
+.header__platforms {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 16px;
 }
+
+.header__platforms img {
+  height: 32px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.header__platforms img:hover {
+  transform: scale(1.1);
+}
+
 
 
