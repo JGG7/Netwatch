@@ -45,117 +45,55 @@
     
     <!-- Header -->
 <header class="header">
-  <div class="header__top">
-  <div class="logo-container">
-    <a href="index.html">
-      <img src="img/Cyberpunk_2077_logo.svg.png" alt="Cyberpunk 2077 Logo">
-    </a>
+  <div class="header__bg">
+    <img src="img/backgound-cyberpunk-pl-.gif" alt="Fondo animado de Cyberpunk 2077" />
   </div>
 
-  <!-- Menú de navegación -->
-  <nav class="nav">
-    <ul class="nav__list">
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <a href="/">
+        <img src="img/Cyberpunk_2077_logo.svg.png" alt="Cyberpunk Logo" />
+      </a>
+    </div>
+    
+    <button id="navToggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <!-- Selector de idioma -->
-      <li class="nav__item dropdown language-selector">
-        <a href="#">
-          <img src="img/español.png" alt="ES" class="flag-icon"> ES
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#"><img src="img/español.png" alt="ES" class="flag-icon"> ES</a></li>
-          <li><a href="#"><img src="img/uk.png" alt="EN" class="flag-icon"> EN</a></li>
-        </ul>
-      </li>
-
-      <!-- Juegos -->
-      <li class="nav__item dropdown">
-        <a href="#">Juegos</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Cyberpunk 2077</a></li>
-          <li><a href="#">Phantom Liberty</a></li>
-        </ul>
-      </li>
-
-      <!-- Series -->
-      <li class="nav__item dropdown">
-        <a href="#">Series</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Cyberpunk Edgerunners</a></li>
-        </ul>
-      </li>
-
-      <!-- Comunidad -->
-      <li class="nav__item"><a href="#comunidad">Comunidad</a></li>
-
-      <!-- Más -->
-      <li class="nav__item dropdown">
-        <a href="#">Más</a>
-        <ul class="dropdown-menu">
-          <li><a href="#noticias">Noticias</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#fan-kit">Fan Kit</a></li>
-        </ul>
-      </li>
-
-      <!-- Botón Comprar -->
-      <li class="nav__item">
-        <a class="cp-btn cp-btn--black h6" href="#comprar"><span>Cómpralo ya</span></a>
-      </li>
-
+    <ul class="navbar__menu">
+      <li><a href="#">JUEGOS</a></li>
+      <li><a href="#">EDGERUNNERS</a></li>
+      <li><a href="#">COMUNIDAD</a></li>
+      <li><a href="#">NOTICIAS</a></li>
+      <li><a href="#">AYUDA</a></li>
+      <li><a href="#">COMPRAR</a></li>
     </ul>
   </nav>
+
+  <!-- Contenido principal -->
+<div class="header__content">
+    <h1 class="header__title">¡Muy Buenos días Night City!</h1>
+<div class="header__actions">
+  <a href="#" class="btn-cyberpunk">NOTICIAS</a>
+  <a href="#" class="btn-cyberpunk">VER TRÁILER</a>
 </div>
 
 
-  <div class="header__content">
-    <div class="header__inner">
-      <!-- Título principal -->
-      <h1 class="title">¡ Muy <br> Buenos <br> días <br> Night City !</h1>
 
-      <!-- Logos de plataformas debajo del título -->
-            <div class="header__platforms">
-  <!-- Xbox Series X|S -->
-  <a href="https://www.xbox.com/games/cyberpunk-2077" target="_blank" rel="noopener">
-    <img src="img/logotipo-de-xbox.png" alt="Xbox Series X|S">
-  </a>
-
-  <!-- PlayStation 5 -->
-  <a href="https://store.playstation.com/es-mx/product/UP9584-CUSA20661_00-CYBERPUNK2077" target="_blank" rel="noopener">
-    <img src="img/logotipo-de-playstation.png" alt="PS5">
-  </a>
-
-  <!-- PC (Steam) -->
-  <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank" rel="noopener">
-    <img src="img/Steam.png" alt="PC">
-  </a>
-
-  <!-- Nintendo Switch -->
-  <a href="https://www.nintendo.com/es-mx/games/detail/cyberpunk-2077-switch-edition/" target="_blank" rel="noopener">
-    <img src="img/nintendo-switch.png" alt="Switch">
-  </a>
-
-  <!-- Mac -->
-  <a href="https://apps.apple.com/us/app/cyberpunk-2077/id1525882850" target="_blank" rel="noopener">
-    <img src="img/apple.png" alt="Mac">
-  </a>
-</div>
-
-
-      <!-- Botones -->
-      <div class="header__bottom">
-        <div class="header__buttons">
-          <a class="cp-btn cp-btn--black h6" href="/co/es/buy"><span>Noticias</span></a>
-          <a class="cp-btn cp-btn--black h6" href="https://cp2077.ly/CP2077_UE_Trailer_ES" target="_blank"><span>Ver tráiler</span></a>
-        </div>
-      </div>
+    <div class="header__icons">
+      <a href="#"><img src="img/logotipo-de-xbox.png" alt="Xbox" /></a>
+      <a href="#"><img src="img/logotipo-de-playstation.png" alt="PlayStation" /></a>
+      <a href="#"><img src="img/Steam.png" alt="Steam" /></a>
+      <a href="#"><img src="img/nintendo-switch.png" alt="Switch" /></a>
+      <a href="#"><img src="img/apple.png" alt="Apple" /></a>
     </div>
   </div>
-
-  <!-- Fondo animado -->
-  <div class="header__bg">
-    <img src="img/backgound-cyberpunk-pl-.gif" alt="Fondo animado de Cyberpunk 2077">
+    <!-- Aquí el título, subtítulo, íconos y botón como ya tienes -->
   </div>
 </header>
+
 
     <!-- Sección de noticias -->
     <section class="news">
@@ -250,18 +188,20 @@
 
   <h2>Seleccionar juego:</h2>
 
-    <div class="juego-opcion" data-juego="ultimate">
+    <div class="juegos-grid">
+  <div class="juego-opcion" data-juego="ultimate">
     <img src="img/version-ultimate.jpg" alt="Cyberpunk 2077 Ultimate">
-    </div>
-    <div class="juego-opcion" data-juego="phantom">
+  </div>
+  <div class="juego-opcion" data-juego="phantom">
     <img src="img/Phantom-liberty-dlc.jpg" alt="Phantom Liberty">
-    </div>
-    <div class="juego-opcion seleccionado" data-juego="base">
+  </div>
+  <div class="juego-opcion seleccionado" data-juego="base">
     <img src="img/imagen - juego base.jpg" alt="Cyberpunk 2077 base">
-    </div>
+  </div>
+</div>
 
-    
-  <p class="info-text">Necesitas tener Cyberpunk 2077 para poder jugar a Phantom Liberty</p>
+<br>
+  <p id="mensaje-juego" class="info-text">Necesitas tener Cyberpunk 2077 para poder jugar a Phantom Liberty</p>
 
   <h2>Selecciona plataforma:</h2>
 
@@ -302,6 +242,7 @@
     <!-- Logos de Socios -->
     <div class="partners">
       <img src="https://www.cyberpunk.net/build/images/footer/partners/nvidia-5a0ab065.svg" alt="NVIDIA GeForce RTX">
+      <img src="https://www.cyberpunk.net/build/images/footer/partners/alienware-4d3c891f.svg" alt="Alienware">
       <img src="https://www.cyberpunk.net/build/images/footer/partners/amd-a823d277.svg" alt="AMD Ryzen">
       <img src="https://www.cyberpunk.net/build/images/rating-esrb@2x-a80e5005.png" alt="ESRB MATURE 17+">
     </div>
@@ -344,6 +285,4 @@
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
-
 </html>
-
