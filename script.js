@@ -89,3 +89,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const botones = document.querySelectorAll(".btn-plataforma");
+
+  const urls = {
+    ultimate: {
+      "xbox-one": "https://www.xbox.com/es-ES/games/store/cyberpunk-2077-ultimate-edition",
+      "xbox-series": "https://www.xbox.com/es-ES/games/store/cyberpunk-2077-ultimate-edition",
+      "ps4": "https://store.playstation.com/es-es/product/EP4497-PPSA02391_00-ULTIMATEEDITION0",
+      "ps5": "https://store.playstation.com/es-es/product/EP4497-PPSA02391_00-ULTIMATEEDITION0"
+    },
+    phantom: {
+      "xbox-one": "https://www.xbox.com/es-ES/games/store/cyberpunk-2077-phantom-liberty",
+      "xbox-series": "https://www.xbox.com/es-ES/games/store/cyberpunk-2077-phantom-liberty",
+      "ps4": "https://store.playstation.com/es-es/product/EP4497-PPSA02391_00-PLBASE0000000000",
+      "ps5": "https://store.playstation.com/es-es/product/EP4497-PPSA02391_00-PLBASE0000000000"
+    },
+    base: {
+      "xbox-one": "https://www.xbox.com/es-ES/games/store/cyberpunk-2077/C1QKDN0ZC5DG",
+      "xbox-series": "https://www.xbox.com/es-ES/games/store/cyberpunk-2077/C1QKDN0ZC5DG",
+      "ps4": "https://store.playstation.com/es-es/product/EP4497-CUSA16596_00-CYBERPUNK000000",
+      "ps5": "https://store.playstation.com/es-es/product/EP4497-CUSA16596_00-CYBERPUNK000000"
+    }
+  };
+
+  botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+      const plataforma = boton.getAttribute("data-plataforma");
+
+      const seleccionados = document.querySelectorAll(".juego-opcion.seleccionado");
+      const tipos = Array.from(seleccionados).map(el => el.getAttribute("data-juego"));
+
+      let tipoJuego = "base";
+
+      if (tipos.includes("ultimate")) tipoJuego = "ultimate";
+      else if (tipos.includes("phantom") && tipos.includes("base")) tipoJuego = "phantom";
+      else if (tipos.includes("phantom")) tipoJuego = "phantom";
+      else tipoJuego = "base";
+
+      const url = urls[tipoJuego]?.[plataforma];
+
+      if (url) {
+        window.open(url, "_blank");
+      } else {
+        alert("No se encontró una URL para esta plataforma.");
+      }
+    });
+  });
+});
+
