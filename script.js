@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const botones = document.querySelectorAll(".cp-btn");
+  const botones = document.querySelectorAll(".cp-btn"); // <- CLASE CORRECTA
 
   const urls = {
     ultimate: {
@@ -138,5 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
